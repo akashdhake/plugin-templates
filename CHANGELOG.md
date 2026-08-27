@@ -1,3 +1,9 @@
+# [57.1.0](https://github.com/salesforcecli/plugin-templates/compare/57.0.11...57.1.0) (2026-08-27)
+
+### Features
+
+- broaden ui-bundle .graphqlrc.yml generation to the angularbasic template ([574bc58](https://github.com/salesforcecli/plugin-templates/commit/574bc5873ec99f9e62a48efb7edaae7d45140083))
+
 ## [57.0.11](https://github.com/salesforcecli/plugin-templates/compare/57.0.10...57.0.11) (2026-08-20)
 
 ## [57.0.10](https://github.com/salesforcecli/plugin-templates/compare/57.0.9...57.0.10) (2026-08-20)
