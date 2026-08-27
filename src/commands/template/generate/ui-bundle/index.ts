@@ -132,19 +132,21 @@ export default class UiBundleGenerate extends SfCommand<CreateOutput> {
       templates: getCustomTemplates(this.configAggregator),
     });
 
-    if (flags.template === 'reactbasic') {
-      const bundleSourcePath = path.join(result.outputDir, flags.name, GRAPHQLRC_FILENAME);
-      const newPath = await UiBundleGenerate.createGraphqlrcAtProjectRoot(bundleSourcePath);
-      if (newPath) {
-        const targetRelative = path.relative(process.cwd(), newPath);
-        const createLine = `  create ${targetRelative}`;
-        ux.log(createLine);
-        return {
-          ...result,
-          created: [...result.created, targetRelative],
-          rawOutput: `${result.rawOutput.replace(/\n$/, '')}\n${createLine}\n`,
-        };
-      }
+    // Any template that scaffolds GraphQL tooling ships a bundle-level .graphqlrc.yml. When one is
+    // present, mirror it to the project root so the GraphQL LSP/lint can auto-discover the schema.
+    // Detection is by artifact rather than a per-template allowlist: createGraphqlrcAtProjectRoot
+    // no-ops when the generated bundle has no .graphqlrc.yml (e.g. the default template).
+    const bundleSourcePath = path.join(result.outputDir, flags.name, GRAPHQLRC_FILENAME);
+    const newPath = await UiBundleGenerate.createGraphqlrcAtProjectRoot(bundleSourcePath);
+    if (newPath) {
+      const targetRelative = path.relative(process.cwd(), newPath);
+      const createLine = `  create ${targetRelative}`;
+      ux.log(createLine);
+      return {
+        ...result,
+        created: [...result.created, targetRelative],
+        rawOutput: `${result.rawOutput.replace(/\n$/, '')}\n${createLine}\n`,
+      };
     }
 
     return result;
