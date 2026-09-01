@@ -1,3 +1,9 @@
+## [57.1.1](https://github.com/salesforcecli/plugin-templates/compare/57.1.0...57.1.1) (2026-09-01)
+
+### Bug Fixes
+
+- upgrade @oclif/core to v5 @W-23512455@ ([#1042](https://github.com/salesforcecli/plugin-templates/issues/1042)) ([fcc72c8](https://github.com/salesforcecli/plugin-templates/commit/fcc72c8f91c2e9a63c2bc8af561b06586e6a50af))
+
 # [57.1.0](https://github.com/salesforcecli/plugin-templates/compare/57.0.11...57.1.0) (2026-08-27)
 
 ### Features
