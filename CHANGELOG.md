@@ -1,3 +1,9 @@
+## [57.1.2](https://github.com/salesforcecli/plugin-templates/compare/57.1.1...57.1.2) (2026-09-03)
+
+### Bug Fixes
+
+- @W-23981976: bump @salesforce/templates to 66.14.0 for localisation feature ([#1044](https://github.com/salesforcecli/plugin-templates/issues/1044)) ([0d34a82](https://github.com/salesforcecli/plugin-templates/commit/0d34a82932ed295b972c26735f5c94258be8667b))
+
 ## [57.1.1](https://github.com/salesforcecli/plugin-templates/compare/57.1.0...57.1.1) (2026-09-01)
 
 ### Bug Fixes
