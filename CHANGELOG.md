@@ -1,3 +1,9 @@
+# [57.2.0](https://github.com/salesforcecli/plugin-templates/compare/57.1.2...57.2.0) (2026-09-09)
+
+### Features
+
+- promote ui-embedding command to GA ([2e3c440](https://github.com/salesforcecli/plugin-templates/commit/2e3c440f8fc2783cdc4d3cfab1224343501f1c78))
+
 ## [57.1.2](https://github.com/salesforcecli/plugin-templates/compare/57.1.1...57.1.2) (2026-09-03)
 
 ### Bug Fixes
