@@ -33,8 +33,6 @@ export default class UIEmbedding extends SfCommand<CreateOutput> {
   public static readonly summary = messages.getMessage('summary');
   public static readonly description = messages.getMessage('description');
   public static readonly examples = messages.getMessages('examples');
-  public static readonly state = 'beta';
-  public static readonly hidden = true;
 
   public static readonly flags = {
     name: Flags.string({
