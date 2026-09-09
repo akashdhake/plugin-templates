@@ -1,3 +1,9 @@
+# [57.3.0](https://github.com/salesforcecli/plugin-templates/compare/57.2.0...57.3.0) (2026-09-09)
+
+### Features
+
+- rename ui-embedding --shell-title flag to --title @W-24143229@ ([#1051](https://github.com/salesforcecli/plugin-templates/issues/1051)) ([49b5e4d](https://github.com/salesforcecli/plugin-templates/commit/49b5e4d1daabb460c4b558c19b4a5803cab0a643))
+
 # [57.2.0](https://github.com/salesforcecli/plugin-templates/compare/57.1.2...57.2.0) (2026-09-09)
 
 ### Features
